@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::491085416027:role/Lambda-Migration-Role"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::pcn-s3-dynamodb/uploads/*"
+        }
+    ]
+}
